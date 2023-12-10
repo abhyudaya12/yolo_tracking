@@ -1,6 +1,8 @@
 # vim: expandtab:ts=4:sw=4
 import numpy as np
 import scipy.linalg
+
+#line number 135 has NSA kalman filter implementation------Abi
 """
 Table for the 0.95 quantile of the chi-square distribution with N degrees of
 freedom (contains values for N=1, ..., 9). Taken from MATLAB/Octave's chi2inv
@@ -132,7 +134,7 @@ class KalmanFilter(object):
             self._std_weight_position * mean[3]]
 
 
-        std = [(1 - confidence) * x for x in std]
+        std = [(1 - confidence) * x for x in std] #NSA Kalman filter
 
         innovation_cov = np.diag(np.square(std))
 

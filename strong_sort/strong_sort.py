@@ -33,17 +33,17 @@ class StrongSORT(object):
         elif file_exists(model_weights):
             pass
         elif model_url is None:
-            print('No URL associated to the chosen DeepSort weights. Choose between:')
+            print('No URL associated to the chosen StrongSORT weights. Choose between:')
             show_downloadeable_models()
             exit()
 
         self.extractor = FeatureExtractor(
-            # get rid of dataset information DeepSort model name
+            # get rid of dataset information StrongSORT model name
             model_name=model_name,
             model_path=model_weights,
             device=str(device)
         )
-
+        
         self.max_dist = max_dist
         metric = NearestNeighborDistanceMetric(
             "cosine", self.max_dist, nn_budget)

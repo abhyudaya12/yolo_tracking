@@ -1,7 +1,7 @@
 __model_types = [
     'resnet50', 'mlfn', 'hacnn', 'mobilenetv2_x1_0', 'mobilenetv2_x1_4',
     'osnet_x1_0', 'osnet_x0_75', 'osnet_x0_5', 'osnet_x0_25',
-    'osnet_ibn_x1_0', 'osnet_ain_x1_0']
+    'osnet_ibn_x1_0', 'osnet_ain_x1_0', 'resnet_r1120', 'resnet50_clt']
 
 __trained_urls = {
 
@@ -71,6 +71,10 @@ __trained_urls = {
 
     'osnet_x0_25_market1501.pt':
     'https://drive.google.com/uc?id=1z1UghYvOTtjx7kEoRfmqSMu-z62J6MAj',
+    'resnet_r1120_market1501.pt':
+    'https://drive.google.com/uc?id=1fJ1df0Emg-w1RLt-vuLb3Q06r5TmVbep',#Abi
+    'resnet50_clt_market1501.pt':
+    'https://drive.google.com/file/d/1fJ1df0Emg-w1RLt-vuLb3Q06r5TmVbep/view?usp=sharing', #Abi
     'osnet_x0_25_dukemtmcreid.pt':
     'https://drive.google.com/uc?id=1eumrtiXT4NOspjyEV4j8cHmlOaaCGk5l',
     'osnet_x0_25_msmt17.pt':
